@@ -1,4 +1,5 @@
 import logo from "../assets/untask.svg";
+import Task from "./Task";
 export default function MainWindow() {
   return (
     <>
@@ -17,7 +18,11 @@ export default function MainWindow() {
             </svg>
           </div>
           <div className="w-10 h-10 mr-2 ml-2 cursor-pointer">
-            <img className="w-full h-full object-contain" src={logo} style={{transform:'rotate(90deg)'}}/>
+            <img
+              className="w-full h-full object-contain"
+              src={logo}
+              style={{ transform: "rotate(90deg)" }}
+            />
           </div>
           <span className="text-xl font-medium cursor-pointer">Untask</span>
         </div>
@@ -66,7 +71,7 @@ export default function MainWindow() {
           </div>
         </div>
         <div>
-
+          <Task />
         </div>
       </div>
     </>
