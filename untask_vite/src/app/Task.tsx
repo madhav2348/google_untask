@@ -1,57 +1,87 @@
 export default function Task() {
   return (
-    <div className="flex-col">
-      <div className="flex">
-        <span className="block">Name of Task List</span>
+    <div className="flex items-center justify-center w-full">
+      <div className="flex-col items-center justify-center w-150 border border-[#444764] bg-[#131314] rounded-2xl p-4">
+        <div className="flex w-full justify-between">
+          <span className="block text-lg mt-2 mb-2">Name of Task List</span>
 
-        <div>
-          <svg
-            className=" items-center hover:rounded-2xl hover:cursor-pointer hover:bg-[#37393b]"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24px"
-            height="24px"
-            viewBox="0 0 16 16"
-            fill="currentColor"
-          >
-            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-          </svg>
-        </div>
-      </div>
-      <div className="flex">
-        <div className="flex ">
-          <div className="">
-            <svg focusable="false" viewBox="0 0 24 24">
-              <path d="M 100 100 a 50 50 0 1 0 0 0 " />
+          <div>
+            <svg
+              className=" items-center hover:rounded-2xl hover:cursor-pointer hover:bg-[#37393b]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+            >
+              <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
             </svg>
           </div>
-          <div className="flex-col">
-            <span className="font-medium block"> Name of Task</span>
-            <span className="font-extralight block"> Sub name of Task</span>
-          </div>
-          <div className="flex">
-            <div className="p-1 block">
-              <svg
-                className=" items-center hover:rounded-2xl hover:cursor-pointer hover:bg-[#37393b]"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24px"
-                height="24px"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-              >
-                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-              </svg>
+        </div>
+        <div className="flex">
+          <div className="flex justify-between w-full ">
+            <div className="flex">
+              <div className="ml-3 mr-3 mt-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.0"
+                  width="18px"
+                  height="18px"
+                  viewBox="0 0 1271.000000 1280.000000"
+                  preserveAspectRatio="xMidYMid meet"
+                  fill="currentColor"
+                >
+                  <g
+                    transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <path d="M6070 12793 c-164 -13 -604 -56 -700 -69 -128 -17 -446 -84 -675 -144 -596 -154 -1284 -468 -1815 -828 -342 -232 -529 -377 -775 -602 -454 -414 -778 -807 -1159 -1402 -298 -467 -592 -1146 -736 -1700 -146 -564 -210 -1062 -210 -1638 0 -480 46 -947 135 -1357 111 -513 235 -896 440 -1358 145 -328 345 -662 661 -1105 285 -400 824 -935 1309 -1300 368 -276 903 -590 1285 -753 161 -68 601 -231 735 -272 365 -111 841 -202 1200 -230 731 -57 1178 -30 1925 116 604 118 1246 366 1804 698 253 151 610 398 846 586 211 167 594 541 791 770 276 321 660 889 850 1259 377 733 585 1403 684 2206 20 160 28 288 36 585 13 480 10 553 -57 1089 -36 291 -156 790 -263 1093 -124 352 -328 811 -473 1065 -255 445 -601 908 -954 1277 -136 143 -566 533 -741 673 -264 212 -522 387 -768 521 -692 376 -1347 614 -1985 722 -80 13 -183 31 -230 40 -260 47 -893 79 -1160 58z m867 -1241 c375 -54 682 -123 953 -213 657 -217 1225 -535 1800 -1007 147 -121 463 -438 610 -612 333 -396 602 -834 819 -1337 70 -162 188 -515 238 -712 66 -264 122 -611 143 -896 14 -177 14 -634 0 -785 -40 -449 -126 -887 -236 -1199 -24 -69 -54 -159 -65 -200 -23 -82 -140 -340 -255 -561 -155 -298 -310 -534 -578 -880 -376 -486 -950 -975 -1521 -1297 -198 -111 -553 -274 -725 -332 -36 -12 -105 -37 -155 -56 -150 -55 -532 -148 -780 -189 -438 -73 -1011 -83 -1460 -26 -345 44 -728 132 -1025 236 -159 55 -493 195 -635 266 -331 166 -680 391 -980 632 -115 92 -360 329 -543 526 -580 622 -1031 1480 -1216 2311 -106 477 -130 689 -131 1169 0 340 2 381 28 595 49 405 108 668 235 1056 366 1117 1164 2138 2158 2761 291 181 641 354 979 480 245 93 408 138 745 208 371 77 517 89 1055 85 339 -2 422 -6 542 -23z" />
+                  </g>
+                </svg>
+              </div>
+              <div className="">
+                <span className="font-medium block text-sm mt-1">
+                  {" "}
+                  Name of Task
+                </span>
+                <span className="font-extralight block text-xs">
+                  Sub name of Task
+                </span>
+                <div className=" mt-1 mn-2 flex justify-center align-middle border rounded-2xl  border-[#444746]">
+                  {" "}
+                  <span className="text-xs p-0.5 text-blue-400">
+                    {" "}
+                    Today,13:00
+                  </span>
+                </div>
+              </div>
             </div>
-            <div className="p-1 block">
-              <svg
-                className=" hover:rounded-2xl hover:cursor-pointer hover:bg-[#37393b]"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24px"
-                height="24px"
-                fill="currentColor"
-                viewBox="0 0 256 256"
-              >
-                <path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path>
-              </svg>
+            <div className="flex">
+              <div className="p-1 block">
+                <svg
+                  className=" items-center hover:rounded-2xl hover:cursor-pointer hover:bg-[#37393b]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                </svg>
+              </div>
+              <div className="p-1 block">
+                <svg
+                  className=" hover:rounded-2xl hover:cursor-pointer hover:bg-[#37393b]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24px"
+                  height="24px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path>
+                </svg>
+              </div>
             </div>
           </div>
         </div>

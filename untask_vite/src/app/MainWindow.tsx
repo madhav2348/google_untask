@@ -70,7 +70,7 @@ export default function MainWindow() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="h-full w-full">
           <Task />
         </div>
       </div>
