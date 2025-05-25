@@ -11,5 +11,10 @@
   "description": "",
   "devDependencies": {
     "electron": "^36.3.1"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.7",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.7"
   }
 }
