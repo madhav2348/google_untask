@@ -14,6 +14,6 @@ export const notify = ({ notficationParam }: NotificationParam) =>
     title: notficationParam.title,
     subtitle: notficationParam.subtitle,
     body: notficationParam.body,
-    icon: "",
+    icon: "../../assets/untask.svg",
     sound: "",
   });
