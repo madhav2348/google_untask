@@ -1,4 +1,5 @@
-import { app, BrowserWindow, Menu, Tray } from "electron";
+import { app, BrowserWindow, ipcMain, Menu, Tray } from "electron";
+import { notify } from "./notification.js";
 
 let tray = null;
 
@@ -14,3 +15,8 @@ app.on("ready", () => {
   const mainWindow = new BrowserWindow({ width: 800, height: 600 });
   mainWindow.loadFile(app.getAppPath() + "/dist-react/index.html");
 });
+
+
+ipcMain.on('push_notification',(event,{title, body, subtitle})=>{
+  notify({ title, subtitle, body }).show()
+})

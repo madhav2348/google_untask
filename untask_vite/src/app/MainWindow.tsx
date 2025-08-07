@@ -1,6 +1,12 @@
+import { useEffect } from "react";
+import { ipcRenderer } from "electron";
 import logo from "../assets/untask.svg";
 import Task from "./Task";
 export default function MainWindow() {
+  useEffect(()=>{
+    // window.ipcRenderer.send('push_notification',{'title','subtitle','body'}) 
+    // example to send ipc signal across platform !!
+  })
   return (
     <>
       <nav className="flex items-center p-5">

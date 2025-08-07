@@ -5,15 +5,11 @@ type NotificationType = {
   body: string;
 };
 
-interface NotificationParam {
-  notficationParam: NotificationType;
-}
-
-export const notify = ({ notficationParam }: NotificationParam) =>
+export const notify = ({ title, subtitle, body }: NotificationType) =>
   new Notification({
-    title: notficationParam.title,
-    subtitle: notficationParam.subtitle,
-    body: notficationParam.body,
-    icon: "../../assets/untask.svg",
+    title: title,
+    subtitle: subtitle,
+    body: body,
+    icon: "../assets/untask.svg",
     sound: "",
   });
